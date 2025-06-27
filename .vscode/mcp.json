@@ -1,0 +1,27 @@
+{
+  "servers": {
+   "balldontlie": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "balldontlie-mcp"
+      ],
+      "env": {
+        "BALLDONTLIE_API_KEY": "d50196b1-abfc-4271-8a59-a011c811475d"
+      }
+    },
+     "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "opgg-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "supergateway",
+        "--streamableHttp",
+        "https://mcp-api.op.gg/mcp"
+      ]
+    }
+  }
+}
